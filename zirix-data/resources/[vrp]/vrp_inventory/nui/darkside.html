@@ -10,7 +10,7 @@
 			<div id="inventario">
 				<div id="inventario-items"></div>
 				<div id="inventario-titulo">
-					<input id="amount" class="qtd" maxlength="9" spellcheck="false" value="" placeholder="Quantidade">
+					<input id="amount" class="qtd" maxlength="9" spellcheck="false" value="" placeholder="Quantidade" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" />
 					<div class="pesomochila">
 						<div id="pesoinfo"></div>
 					</div>
